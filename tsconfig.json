@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": { "*": ["types/*"], "src/*": ["src/*"] },
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "types": ["node"],
+    "lib": ["dom", "esnext"],
+    "module": "nodenext",
+    "target": "ES2017",
+    "allowJs": true,
+    "moduleResolution": "NodeNext",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true
+  },
+  "include": ["globals.d.ts", "./src/*"],
+  "exclude": ["./src/**/*.test.js", "changePackageVersion.js"],
+  "awesomeTypescriptLoaderOptions": {
+    "useBabel": false,
+    "babelOptions": {
+      "babelrc": false /* Important line */,
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "ie": "11"
+            },
+            "modules": false
+          }
+        ]
+      ]
+    },
+    "babelCore": "@babel/core", // needed for Babel v7
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": true,
+        "classes": false,
+        "variables": true,
+        "allowNamedExports": false
+      }
+    ]
+  }
+}

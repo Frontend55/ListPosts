@@ -1,0 +1,32 @@
+{
+    "name": "soft-works",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@mdi/font": "^7.4.47",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-vue": "^9.29.1",
+        "pinia": "^2.2.4",
+        "vue": "^3.5.12",
+        "vue-debounce": "^5.0.1",
+        "vue-router": "4",
+        "vue-uuid": "^3.0.0",
+        "vue3-ui-preloader": "^1.0.4",
+        "vuetify": "^3.7.4"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^5.1.4",
+        "eslint": "^9.13.0",
+        "prettier": "^3.1.0",
+        "prettier-eslint": "^16.1.2",
+        "sass-embedded": "^1.80.4",
+        "vite": "^5.4.9",
+        "vite-plugin-vuetify": "^2.0.4"
+    }
+}

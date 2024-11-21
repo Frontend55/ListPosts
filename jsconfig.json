@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "checkJs": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "typeRoots": ["src/@types"]
+  },
+  "include": [
+    "./webpack/*",
+    "globals.d.ts",
+    "src/**/*.js",
+    "clients/alphaB/pilot/skdhindedtriggers.js",
+    "test/demo/alpha-triggers.js",
+    "src/index.ts",
+    "src/@types",
+    "src/api.ts", 
+    "src/models/scenario/scenario.ts"  
+  ],
+  "exclude": ["node_modules", "dist", "docs", "gulp-tasks", "release", "testing", "temp", "**/node_modules/*"]
+}

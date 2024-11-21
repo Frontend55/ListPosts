@@ -1,0 +1,12 @@
+<template>
+    <loader
+        name="dots"
+        object="#9370db"
+        size="5"
+        speed="2"
+        bg="#161718"
+        objectbg="#999793"
+        opacity="100"
+        :disableScrolling="false"
+    ></loader>
+</template>
